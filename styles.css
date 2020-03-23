@@ -2,6 +2,7 @@ body {
     background-image: url("https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/weather/cloud/cumulus-cloud.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 2vh;
 }
 
 Header {
@@ -23,7 +24,7 @@ h1 {
 section {
     width: 90%;
     margin: auto;
-    height: 50rem;
+    height: 20rem;
     margin-top: 10rem;
     color: grey;
     overflow: auto;
@@ -33,11 +34,28 @@ section {
 
 .item {
     width: 25%;
-    height: 90%;
+    height: 20rem;
+    
+    overflow: auto;
+    color: black;
+}
+
+.text {
+    width: 100%;
+    height: auto;
     background-color: white;
     opacity: 80%;
     overflow: auto;
+    color: black;
+   
+}
+.pic {
+    height: 5rem;
+    width: 100%;
+
 }
 
-
+img {
+    width: 100%
+}
 

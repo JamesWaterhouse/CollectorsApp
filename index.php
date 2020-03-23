@@ -21,29 +21,35 @@
     </header>
 
     <section >
-        <p class="item">
-            <h2>Species:</h2>
-                <?php
-                echo $result[0]['species'];
-            ?>
-        </p>
 
-        <p class="item">
-            <?php
-                echo $result[1]['species'];
-            ?>
-        </p>
+    
+    <?php foreach($result as $bird) {
+        echo '<div class="item">
+            <div class="pic">
+                <img src= "';
+                
+                echo $bird['picture'];
+                
+                echo'">
+            </div>';
 
-        <p class="item">
-            <?php
-                echo $result[2]['species'];
-            ?>
-        </p>
+
+            echo '<div class="text">
+                <ul class="attributes">';
+                   echo '<li>Species: '; echo $bird["species"]; echo'</li>';
+                   echo '<li>Colour: '; echo $bird["color"]; echo'</li>';
+                   echo '<li>Frequency: '; echo $bird["frequency"]; echo'</li>';
+                   echo '<li>Has it shit on me? '; echo $bird["shit"]; echo'</li>';
+               echo '</ul>
+            </div>  
+        </div>';
+    }
+
+?>
 
 
     </section>
 </body>
 
 </html>
-
 
