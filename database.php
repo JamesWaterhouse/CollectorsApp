@@ -10,7 +10,3 @@ $query->execute();
 
 $result = $query->fetchAll();
 
-echo $result;
-
-
-?>

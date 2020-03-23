@@ -34,8 +34,9 @@ section {
 .item {
     width: 25%;
     height: 90%;
-    background-color: transparent;
+    background-color: white;
     opacity: 80%;
+    overflow: auto;
 }
 
 
