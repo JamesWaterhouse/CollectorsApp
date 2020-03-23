@@ -2,6 +2,20 @@
 <head>
 
     <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <?php
+
+    $db = new PDO('mysql:host=db; dbname=mailmerge', 'root', 'password');
+
+$query = $db->prepare("SELECT `name`, `email` FROM `users`;");
+
+$query->setFetchMode(PDO::FETCH_ASSOC);
+
+$query->execute();
+
+$result = $query->fetchAll();
+
+?>
 
 </head>
 
