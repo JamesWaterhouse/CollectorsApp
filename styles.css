@@ -1,7 +1,42 @@
 body {
-    background-image: url ("https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/weather/cloud/cumulus-cloud.jpg");
-    background-repeat: no-repeat
-
-
+    background-image: url("https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/weather/cloud/cumulus-cloud.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+Header {
+    height: 8rem;
+    width:100%;
+    background-color: white;
+    position: sticky;
+    opacity: 80%;
+    color: grey;
+}
+
+h1 {
+
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+section {
+    width: 90%;
+    margin: auto;
+    height: 50rem;
+    margin-top: 10rem;
+    color: grey;
+    overflow: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item {
+    width: 25%;
+    height: 90%;
+    background-color: transparent;
+    opacity: 80%;
+}
+
+
 
