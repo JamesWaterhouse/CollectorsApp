@@ -38,13 +38,6 @@ h1 {
     font-size: 2rem;
 }
 
-button {
-    width: 20%;
-    height: 4rem;
-    border-radius: 2rem;
-    font-size: 2rem;
-    margin: auto;
-}
 
 
 .form {
@@ -59,6 +52,26 @@ button {
 
 
 input {
+    width: 90%;
+    height: auto;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 2rem;
+}
+
+select {
+    width: 90%;
+    height: auto;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 2rem;
+}
+
+option {
     width: 90%;
     height: auto;
     padding: 1rem 0;
