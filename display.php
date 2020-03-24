@@ -1,7 +1,5 @@
 <?php 
 
-require "database.php";
-
 function display($array) {
 
     foreach ($array as $bird) {

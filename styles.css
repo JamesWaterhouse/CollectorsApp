@@ -1,10 +1,16 @@
-
+* {
+    box-sizing: border-box;
+}
 
 body {
     background-image: url("https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/weather/cloud/cumulus-cloud.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     font-family: 'Raleway';
+    width: auto;
+    height: 1vh;
+    text-align: center;
 }
 
 Header {
@@ -12,57 +18,104 @@ Header {
     width:100%;
     background-color: white;
     position: sticky;
+    top: 0rem;
     opacity: 80%;
     color: grey;
 }
 
 h1 {
-
     font-size: 5rem;
     font-weight: bold;
     text-align: center;
+    padding: 1rem;
 }
 
-section {
-    width: 90%;
+.new {
+
     margin: auto;
+    text-align: center;
+    padding-top: 5rem;
+    font-size: 2rem;
+}
+
+button {
+    width: 20%;
+    height: 4rem;
+    border-radius: 2rem;
+    font-size: 2rem;
+    margin: auto;
+}
+
+
+.form {
+    width: 30%;
+    text-align: center;
+    margin: auto;
+    margin-top: 2rem;
+    box-sizing: border-box;
+    background-color: transparent;
+    opacity: 80%;
+}
+
+
+input {
+    width: 90%;
     height: auto;
-    margin-top: 10rem;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.birds {
+    width: 90%;
+    margin: auto;   
+    height: auto;
+    margin-top: 5rem;
     color: grey;
     overflow: auto;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-between;
 }
 
 .item {
-    width: 25%;
+    width: 26%;
     height: auto;
     overflow: auto;
     color: black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-bottom: 5rem;
 }
 
 .text {
     width: 100%;
-    height: 10rem;
+    height: 15rem;
     background-color: white;
     opacity: 80%;
     overflow: hidden;
     color: black;
-   
 }
+
 .pic {
     height: auto;
     width: 100%;
     background-color: transparent;
-
 }
 
 img {
     width: 100%;
     background-color: transparent;
-    
 }
 
+.attributes {
+    list-style: none;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    list-style: none;
+    padding: 1rem;
+}
