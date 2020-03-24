@@ -31,11 +31,17 @@
                             <option value=2>No</option>
                             
                         </select>
-                        <input type='text' id='picture' name='picture' placeholder='url of picture'>
+                        <input type='text' id='picture' name='picture' placeholder='url of picture - or leave blank'>
                         <input type='submit' value='Add Bird'>
 
                     </form>
                 </div>
+        </section>
+
+        <section class='new'>
+            <a href='index.php'>
+                <button>Go back</button>
+            </a>
         </section>
      
     </body>

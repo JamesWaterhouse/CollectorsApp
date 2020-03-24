@@ -6,7 +6,6 @@ $species = '';
 $color = '';
 $frequency = '';
 $shit = '';
-$picture = '';
 
 if (isset($_POST['species'])) {
 
@@ -33,12 +32,15 @@ if (isset($_POST['picture'])) {
     $picture = $_POST['picture'];
 }
 
+if ($picture == '') {
+    $picture = null;
+}
+
 $db = new PDO('mysql:host=db; dbname=birds', 'root', 'password');
 
 $query = $db->prepare("INSERT INTO `birds` (`picture`, `species`, `color`, `frequency`, `shit`) VALUES ('$picture', '$species', '$color', $frequency, $shit)");
 $query->setFetchMode(PDO::FETCH_ASSOC);
 $query->execute();
 
-header("Location: index.php");
 
 
