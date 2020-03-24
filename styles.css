@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'raleway';
 }
 
 body {
@@ -9,7 +10,7 @@ body {
     background-attachment: fixed;
     font-family: 'Raleway';
     width: auto;
-    height: 1vh;
+
     text-align: center;
     color: grey;
 }
@@ -20,8 +21,6 @@ Header {
     height: 8rem;
     width:100%;
     background-color: white;
-    position: sticky;
-    top: 0rem;
     opacity: 80%;
     color: grey;
 }
@@ -127,14 +126,15 @@ option {
 }
 
 .pic {
-    height: auto;
+    height: 18rem;
     max-width: 100%;
     background-color: transparent;
+    margin-bottom: 1rem;
 }
 
 img {
-    max-width:100%;
-    max-height:100%;
+    width:100%;
+    height:100%;
     background-color: transparent;
 }
 

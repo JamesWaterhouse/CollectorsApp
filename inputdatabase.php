@@ -38,8 +38,13 @@ if ($picture == '') {
 
 $db = new PDO('mysql:host=db; dbname=birds', 'root', 'password');
 
-$query = $db->prepare("INSERT INTO `birds` (`picture`, `species`, `color`, `frequency`, `shit`) VALUES ('$picture', '$species', '$color', $frequency, $shit)");
+$query = $db->prepare("INSERT INTO `birds` (`picture`, `species`, `color`, `frequency`, `shit`) VALUES (:picture, :species, :color, :frequency, :shit)");
 $query->setFetchMode(PDO::FETCH_ASSOC);
+$query -> bindParam(':picture', $picture);
+$query -> bindParam(':species', $species);
+$query -> bindParam(':color', $color);
+$query -> bindParam(':frequency', $frequency);
+$query -> bindParam(':shit', $shit);
 $query->execute();
 
 
