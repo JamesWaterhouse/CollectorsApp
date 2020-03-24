@@ -1,6 +1,7 @@
 <?php
 
 require 'inputform.php';
+require "connect.php";
 
 $species = '';
 $color = '';
@@ -35,8 +36,6 @@ if (isset($_POST['picture'])) {
 if ($picture == '') {
     $picture = null;
 }
-
-$db = new PDO('mysql:host=db; dbname=birds', 'root', 'password');
 
 $query = $db->prepare("INSERT INTO `birds` (`picture`, `species`, `color`, `frequency`, `shit`) VALUES (:picture, :species, :color, :frequency, :shit)");
 $query->setFetchMode(PDO::FETCH_ASSOC);

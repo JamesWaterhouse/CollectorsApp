@@ -12,19 +12,14 @@
         <header>
             <h1>What birds are outside my window?</h1>
         </header>
-   
         <section class='new'>
             <a href='inputform.php'>
                 <button>I just saw a new bird!</button>
             </a>
         </section>
-       
-        <section class="birds" >
+        <section class="birds">
             <?php display($result);?>
         </section>
-
-        
-     
     </body>
 </html>
 

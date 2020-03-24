@@ -1,7 +1,5 @@
 <?php 
-
 function display($array) {
-
     foreach ($array as $bird) {
             echo '<div class="item">
                     <div class="pic">
@@ -18,3 +16,4 @@ function display($array) {
             </div>';
         }
     }
+?>
