@@ -38,7 +38,6 @@ if ($picture == '') {
 }
 
 $query = $db->prepare("INSERT INTO `birds` (`picture`, `species`, `color`, `frequency`, `shit`) VALUES (:picture, :species, :color, :frequency, :shit)");
-$query->setFetchMode(PDO::FETCH_ASSOC);
 $query -> bindParam(':picture', $picture);
 $query -> bindParam(':species', $species);
 $query -> bindParam(':color', $color);

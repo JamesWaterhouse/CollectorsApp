@@ -10,10 +10,9 @@ function display($array) {
                     echo '<li>Species: '; echo $bird["species"]; echo'</li>';
                     echo '<li>Colour: '; echo $bird["color"]; echo'</li>';
                     echo '<li>Frequency: '; echo $bird["frequency"]; echo'</li>';
-                    echo '<li>Has it shit on me? '; echo $bird["shit"]; echo'</li>';
+                    echo '<li>Has it shit on the window? '; echo $bird["shit"]; echo'</li>';
                 echo '</ul>
                 </div>  
             </div>';
         }
     }
-?>

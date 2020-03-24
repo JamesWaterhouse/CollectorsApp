@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: 'raleway';
+    font-family: 'raleway', serif;
     color: grey;
 }
 body {
@@ -8,7 +8,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    font-family: 'Raleway';
     width: auto;
     text-align: center;
 }
@@ -25,23 +24,23 @@ h1 {
     padding: 1rem;
 }
 .new {
+    height: 5rem;
     width: 80%;
-    margin: auto;
-    margin-top: 5rem;
+    margin: 5rem auto auto;
 }
-button {
-    height: 4rem;
+.new a {
     width: 30%;
     border-radius: 2rem;
     font-size: 2rem;
     background-color: white;
     opacity: 80%;
+    padding: 1rem;
+    text-decoration: none;
 }
 .form {
     width: 30%;
     text-align: center;
-    margin: auto;
-    margin-top: 2rem;
+    margin: 2rem auto auto;
     box-sizing: border-box;
     background-color: transparent;
     opacity: 80%;
@@ -76,9 +75,8 @@ option {
 }
 .birds {
     width: 90%;
-    margin: auto;   
     height: auto;
-    margin-top: 5rem;
+    margin: 5rem auto auto;
     overflow: auto;
     display: flex;
     justify-content: space-evenly;
@@ -116,6 +114,5 @@ img {
     list-style: none;
     font-size: 1.5rem;
     line-height: 2.5rem;
-    list-style: none;
     padding: 1rem;
 }
