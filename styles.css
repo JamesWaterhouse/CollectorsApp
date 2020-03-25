@@ -23,19 +23,24 @@ h1 {
     text-align: center;
     padding: 1rem;
 }
-.new {
-    height: 5rem;
+.buttons {
+    height: auto;
     width: 80%;
-    margin: 5rem auto auto;
+    margin: 3rem auto auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
 }
-.new a {
-    width: 30%;
+.buttons a {
+    width: 30rem;
     border-radius: 2rem;
     font-size: 2rem;
     background-color: white;
     opacity: 80%;
-    padding: 1rem;
+    padding: 1rem 0;
     text-decoration: none;
+    margin: 1rem;
 }
 .form {
     width: 30%;
@@ -63,6 +68,7 @@ select {
     text-align: center;
     font-size: 2rem;
     appearance: none;
+    font-family: 'raleway', serif;
 }
 option {
     width: 100%;
@@ -72,11 +78,12 @@ option {
     font-size: 2rem;
     appearance: none;
     padding: 2rem 0;
+    font-family: 'raleway', serif;
 }
 .birds {
     width: 90%;
     height: auto;
-    margin: 5rem auto auto;
+    margin: 3rem auto auto;
     overflow: auto;
     display: flex;
     justify-content: space-evenly;
@@ -100,7 +107,7 @@ option {
     overflow: hidden;
 }
 .pic {
-    height: 18rem;
+    height: 15rem;
     max-width: 100%;
     background-color: transparent;
     margin-bottom: 1rem;
@@ -112,7 +119,7 @@ img {
 }
 .attributes {
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 2.5rem;
     padding: 1rem;
 }

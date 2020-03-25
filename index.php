@@ -16,8 +16,10 @@ require "connect.php";
         <header>
             <h1>What birds are outside my window?</h1>
         </header>
-        <section class='new'>
-                <a href='inputform.php'>I just saw a new bird!</a>
+        <section class='buttons'>
+            <a href='inputform.php'>I just saw a new bird!</a>
+            <a href='delete.php'>I want to delete a bird!</a>
+            <a href='edit.php'>A bird has changed!</a>
         </section>
         <section class="birds">
             <?php

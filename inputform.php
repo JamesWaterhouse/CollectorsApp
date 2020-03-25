@@ -28,7 +28,7 @@
                     </form>
                 </div>
         </section>
-        <section class='new'>
+        <section class='buttons'>
             <a href='index.php'>Go back</a>
         </section>
     </body>
