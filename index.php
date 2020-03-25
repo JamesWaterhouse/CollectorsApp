@@ -1,48 +1,30 @@
-<html>
-<head>
-
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    
-    <?php
-
-    $db = new PDO('mysql:host=db; dbname=mailmerge', 'root', 'password');
-
-$query = $db->prepare("SELECT `name`, `email` FROM `users`;");
-
-$query->setFetchMode(PDO::FETCH_ASSOC);
-
-$query->execute();
-
-$result = $query->fetchAll();
-
+<?php
+require "display.php";
+require "getBirds.php";
+require "connect.php";
 ?>
 
-</head>
-
-<body>
-    <header>
-        <h1>
-        What birds are outside my window?
-        </h1>
-    </header>
-
-    <section >
-        <p class="item">
-            <img src="https://www.transparentpng.com/thumb/seagull/Vph8Vo-seagull-free-download-transparent.png" alt="Seagull">
-        </item>
-
-        <p class="item">
-
-        </item>
-
-        <p class="item">
-
-        </item>
-
-
-    </section>
-</body>
-
+<!doctype html>
+<html lang='en'>
+    <head>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>birds and that</title>
+    </head>
+    <body>
+        <header>
+            <h1>What birds are outside my window?</h1>
+        </header>
+        <section class='new'>
+                <a href='inputform.php'>I just saw a new bird!</a>
+        </section>
+        <section class="birds">
+            <?php
+            $result = getBirds($db);
+            display($result)
+            ;?>
+        </section>
+    </body>
 </html>
-
 
