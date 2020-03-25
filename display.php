@@ -1,17 +1,16 @@
 <?php 
-function display($array) {
+function display(ARRAY $array) {
     foreach ($array as $bird) {
             echo '<div class="item">
                     <div class="pic">
-                        <img src= "'; echo $bird['picture']; echo'">
-                    </div>';
-            echo '<div class="text">
-                    <ul class="attributes">';
-                    echo '<li>Species: '; echo $bird["species"]; echo'</li>';
-                    echo '<li>Colour: '; echo $bird["color"]; echo'</li>';
-                    echo '<li>Frequency: '; echo $bird["frequency"]; echo'</li>';
-                    echo '<li>Has it shit on the window? '; echo $bird["shit"]; echo'</li>';
-                echo '</ul>
+                        <img src= "' . $bird['picture'] . '">
+                    </div>' . '<div class="text">
+                    <ul class="attributes">' .
+                        '<li>Species: ' . $bird["species"] . '</li>' .
+                        '<li>Colour: ' . $bird["color"] . '</li>' .
+                        '<li>Frequency: ' . $bird["frequency"] . '</li>' .
+                        '<li>Has it shit on the window? ' . $bird["shit"] . '</li>' .
+                    '</ul>
                 </div>  
             </div>';
         }
