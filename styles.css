@@ -28,20 +28,37 @@ h1 {
     width: 80%;
     margin: 3rem auto auto;
     display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .buttons a {
-    width: 30rem;
+    width: 30%;
     border-radius: 2rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     background-color: white;
     opacity: 80%;
     padding: 1rem 0;
     text-decoration: none;
-    margin: 1rem;
+    align-content: space-evenly;
 }
+
+.backButtons {
+    height: auto;
+    width: 80%;
+    margin: 3rem auto auto;
+
+}
+
+.backButtons a {
+    width: 30%;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    background-color: white;
+    opacity: 80%;
+    padding: 1rem;
+
+}
+
 .form {
     width: 30%;
     text-align: center;
@@ -57,7 +74,7 @@ input {
     margin: 1rem 0;
     box-sizing: border-box;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 select {
     width: 90%;
@@ -66,9 +83,10 @@ select {
     margin: 1rem 0;
     box-sizing: border-box;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     appearance: none;
     font-family: 'raleway', serif;
+    text-align-last: center;
 }
 option {
     width: 100%;
@@ -122,4 +140,8 @@ img {
     font-size: 1.2rem;
     line-height: 2.5rem;
     padding: 1rem;
+}
+
+label {
+    display: none;
 }

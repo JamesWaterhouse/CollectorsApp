@@ -33,7 +33,7 @@ $species = getSpeciesList($db);
             </form>
         </div>
     </section>
-    <section class="buttons">
+    <section class="backButtons">
         <a href="index.php">Go back</a>
     </section>
  </body>
