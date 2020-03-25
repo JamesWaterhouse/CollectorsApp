@@ -3,7 +3,7 @@
 require 'connect.php';
 require 'getSpecies.php';
 
-$Species = getSpeciesList($db);
+$species = getSpeciesList($db);
 
 ?>
 
@@ -18,6 +18,7 @@ $Species = getSpeciesList($db);
 
     <option value=' <?php echo $s['species'] . "'>"  . $s['species'] . "</option>"; } ?>
 
+<input type=submit>
     </form>
 
 </html>
