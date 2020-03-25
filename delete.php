@@ -10,7 +10,7 @@ $species = getSpeciesList($db);
 
 ?>
 
-
+<!DOCTYPE html>
 <html lang='en'>
 <head>
     <link href='styles/normalize.css' rel='stylesheet' type='text/css'>
