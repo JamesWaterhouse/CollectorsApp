@@ -1,7 +1,6 @@
 <?php
 
-require 'getBirdFromId.php';
-
+require 'getBirdFromIdFunction.php';
 
 $species = $bird[0]['species'];
 $color = $bird[0]['color'];
@@ -10,7 +9,6 @@ $shit = $bird[0]['shit'];
 $picture = $bird[0]['picture'];
 $id = $bird[0]['id']
 
-
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +16,7 @@ $id = $bird[0]['id']
 <head>
     <link href='styles/normalize.css' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Raleway&display=swap' rel='stylesheet'>
-    <link rel='stylesheet' type='text/css' href='styles.css'>
+    <link rel='stylesheet' type='text/css' href='styles/styles.css'>
     <title>Edit Bird</title>
 </head>
 <body>
@@ -27,11 +25,9 @@ $id = $bird[0]['id']
 </header>
     <section class='form'>
         <div id='form'>
-            <form action="editBirds.php?bird=<?php echo $id; ?>" method='post'>
-
+            <form action="editFunction.php?bird=<?php echo $id; ?>" method='post'>
                 <label for='color'>Colour</label>
                 <input type='text' id='color' name='color' value='<?php echo $color; ?>' placeholder='New Colour?'>
-
                 <label for='frequency'>Frequency</label>
                 <select id='frequency' name='frequency'>
                     <option value=0 disabled selected>New Frequency?</option>
@@ -40,17 +36,14 @@ $id = $bird[0]['id']
                     <option value=3>Rare</option>
                     <option value=4>Saw it in my dreams</option>
                 </select>
-
                 <label for='shit'>Has it shit? on the window?</label>
                 <select id='shit' name='shit'>
                     <option value=0 disabled selected>Did it just shit on the window?</option>
                     <option value=1>Yes</option>
                     <option value=2>No</option>
                 </select>
-
                 <label for='picture'>Picture Url</label>
-                <input type='text' id='picture' name='picture' value='<?php echo $picture; ?>'>
-
+                <input type='url' id='picture' name='picture' value='<?php echo $picture; ?>'>
                 <input type="submit" value="Update Bird">
             </form>
         </div>

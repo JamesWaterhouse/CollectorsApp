@@ -29,8 +29,8 @@ function display(ARRAY $array) {
                     
                     </div>  
                     <div class="edit">
-                         <a class="link" href="edit.php?bird=' . $bird["id"] . '">Edit</a>
-                         <a class="link" href="deleteSpecies.php?bird=' . $bird["id"] . '">Delete</a>
+                         <a class="link" href="editUserInput.php?bird=' . $bird["id"] . '">Edit</a>
+                         <a class="link" href="deleteFunction.php?bird=' . $bird["id"] . '">Delete</a>
                     </div>
                 </div>';
         }

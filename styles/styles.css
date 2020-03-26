@@ -12,13 +12,14 @@ body {
     text-align: center;
 }
 Header {
-    height: 8rem;
+    height: auto;
     width:100%;
     background-color: white;
     opacity: 80%;
 }
 h1 {
-    font-size: 5rem;
+    max-width: 100%;
+    font-size: 5em;
     font-weight: bold;
     text-align: center;
     padding: 1rem;
@@ -157,3 +158,18 @@ label {
     display: none;
 }
 
+@media screen and (min-width : 1600px) {
+    /* For enlarged desktop: */
+    body {
+        width: 1600px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width : 1350px) {
+    /* For smaller desktop: */
+    .item {
+        width: 34%;
+
+    }
+}

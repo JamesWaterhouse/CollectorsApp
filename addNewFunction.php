@@ -1,6 +1,6 @@
 <?php
 
-require "connect.php";
+require "databaseConnectFunction.php";
 
 $newSpecies = 0;
 $newColor = '';
