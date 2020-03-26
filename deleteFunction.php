@@ -1,6 +1,6 @@
 <?php
 
-require_once 'connect.php';
+require_once 'databaseConnectFunction.php';
 
 header("Location:index.php");
 

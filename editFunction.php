@@ -1,7 +1,7 @@
 <?php
 
-require_once 'connect.php';
-require_once 'edit.php';
+require_once 'databaseConnectFunction.php';
+require_once 'editUserInput.php';
 
 $editColor = $color;
 $editFrequency = $frequency;

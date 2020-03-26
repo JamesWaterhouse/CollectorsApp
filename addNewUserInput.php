@@ -1,14 +1,18 @@
+<?php
+require 'addNewFunction.php';
+?>
+
 <html lang='en'>
     <head>
         <link href='styles/normalize.css' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Raleway&display=swap' rel='stylesheet'>
-        <link rel='stylesheet' type='text/css' href='styles.css'>
+        <link rel='stylesheet' type='text/css' href='styles/styles.css'>
         <title>Add New Bird</title>
     </head>
     <body>
         <section class='form'>
                 <div id='form'>
-                    <form name='add_bird' method='post' action='inputdatabase.php' id='add_bird'>
+                    <form name='add_bird' method='post' action='addNewUserInput.php' id='add_bird'>
                         <label for='species'>Species</label>
                         <input type='text' id='species' name='species' placeholder='What kind of bird?'>
 
@@ -32,9 +36,9 @@
                         </select>
 
                         <label for='picture'>Picture Url</label>
-                        <input type='text' id='picture' name='picture' placeholder='url of picture'>
+                        <input type='url' id='picture' name='picture' placeholder='url of picture'>
 
-                        <input type='submit' value='Add Bird'>
+                        <input type='submit' id='submit' name='submit' value='Add Bird'>
                     </form>
                 </div>
         </section>

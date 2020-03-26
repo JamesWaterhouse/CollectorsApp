@@ -1,5 +1,5 @@
 <?php
-require "connect.php";
+require "databaseConnectFunction.php";
 
 function getBirds(PDO $db) {
 
