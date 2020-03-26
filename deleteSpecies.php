@@ -1,19 +1,22 @@
 <?php
 
 require_once 'connect.php';
-require_once 'delete.php';
 
-$deleteSpecies = '';
+header("Location:index.php");
 
-if (isset($_POST['delspecies'])) {
+$birdId = '';
 
-    $deleteSpecies = $_POST['delspecies'];
+if (isset($_GET['bird'])) {
+
+    $birdId = $_GET['bird'];
 }
 
-$query = $db->prepare("DELETE FROM `birds` WHERE `species` = '$deleteSpecies'");
+$query = $db->prepare("DELETE FROM `birds` WHERE `id` = '$birdId'");
 
 $query->execute();
 
 return $query->fetchAll();
+
+
 
 

@@ -119,6 +119,12 @@ option {
     opacity: 80%;
     overflow: hidden;
 }
+
+.edit {
+    background-color: white;
+    opacity: 80%;
+    padding-bottom: 1rem;
+}
 .pic {
     height: 15rem;
     max-width: 100%;
@@ -139,3 +145,4 @@ img {
 label {
     display: none;
 }
+
