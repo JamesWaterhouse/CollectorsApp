@@ -1,6 +1,5 @@
 <?php
 
-require 'inputform.php';
 require "connect.php";
 
 $newSpecies = 0;
@@ -35,13 +34,14 @@ if (isset($_POST['picture'])) {
 } else  $newPicture = null;
 
 
-$query = $db->prepare("INSERT INTO `birds` (`picture`, `species`, `color`, `frequency`, `shit`) VALUES (:picture, :species, :color, :frequency, :shit)");
-$query -> bindParam(':picture', $newPicture);
-$query -> bindParam(':species', $newSpecies);
-$query -> bindParam(':color', $newColor);
-$query -> bindParam(':frequency', $newFrequency);
-$query -> bindParam(':shit', $newShit);
-$query->execute();
-
+if (isset($_POST['submit'])) {
+    $query = $db->prepare("INSERT INTO `birds` (`picture`, `species`, `color`, `frequency`, `shit`) VALUES (:picture, :species, :color, :frequency, :shit)");
+    $query -> bindParam(':picture', $newPicture);
+    $query -> bindParam(':species', $newSpecies);
+    $query -> bindParam(':color', $newColor);
+    $query -> bindParam(':frequency', $newFrequency);
+    $query -> bindParam(':shit', $newShit);
+    $query->execute();
+}
 
 

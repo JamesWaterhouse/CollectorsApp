@@ -1,3 +1,7 @@
+<?php
+require 'inputdatabase.php';
+?>
+
 <html lang='en'>
     <head>
         <link href='styles/normalize.css' rel='stylesheet' type='text/css'>
@@ -8,7 +12,7 @@
     <body>
         <section class='form'>
                 <div id='form'>
-                    <form name='add_bird' method='post' action='inputdatabase.php' id='add_bird'>
+                    <form name='add_bird' method='post' action='inputform.php' id='add_bird'>
                         <label for='species'>Species</label>
                         <input type='text' id='species' name='species' placeholder='What kind of bird?'>
 
@@ -34,7 +38,7 @@
                         <label for='picture'>Picture Url</label>
                         <input type='text' id='picture' name='picture' placeholder='url of picture'>
 
-                        <input type='submit' value='Add Bird'>
+                        <input type='submit' id='submit' name='submit' value='Add Bird'>
                     </form>
                 </div>
         </section>
