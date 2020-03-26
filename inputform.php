@@ -3,7 +3,7 @@
         <link href='styles/normalize.css' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Raleway&display=swap' rel='stylesheet'>
         <link rel='stylesheet' type='text/css' href='styles.css'>
-        <title>form</title>
+        <title>Add New Bird</title>
     </head>
     <body>
         <section class='form'>

@@ -17,7 +17,7 @@ $query -> bindParam(':birdId', $birdId);
 
 $query->execute();
 
-return $query->fetchAll();
+$query->fetchAll();
 
 
 

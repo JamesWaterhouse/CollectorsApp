@@ -119,11 +119,23 @@ option {
     overflow: hidden;
 }
 
-.edit {
+div .edit {
     background-color: white;
     opacity: 80%;
     padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
+
 }
+
+.item .edit .link {
+    width: auto;
+    margin: 10px;
+    text-decoration: none;
+}
+
 .pic {
     height: 15rem;
     max-width: 100%;

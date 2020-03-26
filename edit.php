@@ -19,7 +19,7 @@ $id = $bird[0]['id']
     <link href='styles/normalize.css' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Raleway&display=swap' rel='stylesheet'>
     <link rel='stylesheet' type='text/css' href='styles.css'>
-    <title>form</title>
+    <title>Edit Bird</title>
 </head>
 <body>
 <header>
@@ -30,7 +30,7 @@ $id = $bird[0]['id']
             <form action="editBirds.php?bird=<?php echo $id; ?>" method='post'>
 
                 <label for='color'>Colour</label>
-                <input type='text' id='color' name='color' placeholder='New Colour?'>
+                <input type='text' id='color' name='color' value='<?php echo $color; ?>' placeholder='New Colour?'>
 
                 <label for='frequency'>Frequency</label>
                 <select id='frequency' name='frequency'>
@@ -49,7 +49,7 @@ $id = $bird[0]['id']
                 </select>
 
                 <label for='picture'>Picture Url</label>
-                <input type='text' id='picture' name='picture' placeholder='Do you want a new picture?'>
+                <input type='text' id='picture' name='picture' value='<?php echo $picture; ?>'>
 
                 <input type="submit" value="Update Bird">
             </form>

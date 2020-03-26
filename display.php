@@ -17,11 +17,11 @@ function display(ARRAY $array) {
                         '<li>Has it shit on the window? ' . $bird["shit"] . '</li>' .
                     '</ul>
                     
-                </div>  
-                <div class="edit">
-                     <a class="deleteLink" href="deleteSpecies.php?bird=' . $bird["id"] . '">Delete</a>
-                     <a class="editLink" href="edit.php?bird=' . $bird["id"] . '">Edit</a>
-                </div>
-            </div>';
+                    </div>  
+                    <div class="edit">
+                         <a class="link" href="edit.php?bird=' . $bird["id"] . '">Edit</a>
+                         <a class="link" href="deleteSpecies.php?bird=' . $bird["id"] . '">Delete</a>
+                    </div>
+                </div>';
         }
     }

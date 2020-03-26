@@ -4,10 +4,10 @@ require 'inputform.php';
 require "connect.php";
 
 $newSpecies = 0;
-$newColor = 0;
+$newColor = '';
 $newFrequency = 0;
 $newShit = 0;
-$newPicture = 0;
+$newPicture = '';
 
 if (isset($_POST['species'])) {
 
