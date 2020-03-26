@@ -1,0 +1,3 @@
+Edit.php?bird=2 
+
+$_GET[‘bird’] 
