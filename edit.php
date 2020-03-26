@@ -1,9 +1,9 @@
 <?php
 require_once 'connect.php';
 require_once 'editBirds.php';
-require_once 'getSpecies.php';
+require_once 'getBirdFromId.php';
 
-$species = getSpeciesList($db);
+$birdId = $_GET['bird'];
 
 ?>
 
@@ -16,16 +16,12 @@ $species = getSpeciesList($db);
     <title>form</title>
 </head>
 <body>
+<header>
+    <h1>Edit <?php echo $birdName[0]['species']; ?></h1>
+</header>
     <section class='form'>
         <div id='form'>
             <form action='edit.php' method='post'>
-                <label for="species">Species</label>
-                <select name="species" id="species">
-                    <option>Select a bird to update:</option>
-
-                        <?php foreach ($species as $s) {
-                            echo  "<option value='" . $s['species'] . "'>"  . $s['species'] . "</option>"; } ?>
-                </select>
 
                 <label for='color'>Colour</label>
                 <input type='text' id='color' name='color' placeholder='What colour was it'>
