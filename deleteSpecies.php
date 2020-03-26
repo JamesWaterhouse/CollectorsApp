@@ -11,7 +11,9 @@ if (isset($_GET['bird'])) {
     $birdId = $_GET['bird'];
 }
 
-$query = $db->prepare("DELETE FROM `birds` WHERE `id` = '$birdId'");
+$query = $db->prepare("DELETE FROM `birds` WHERE `id` = :birdId");
+
+$query -> bindParam(':birdId', $birdId);
 
 $query->execute();
 

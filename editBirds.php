@@ -3,41 +3,46 @@
 require_once 'connect.php';
 require_once 'edit.php';
 
+$editColor = $color;
+$editFrequency = $frequency;
+$editShit = $shit;
+$editPicture = $picture;
+
+
+
 if (isset($_POST['color'])) {
 
-    $newColor = $_POST['color'];
+    $editColor = $_POST['color'];
 }
 
 if (isset($_POST['frequency'])) {
 
-    $newFrequency = $_POST['frequency'];
+    $editFrequency = $_POST['frequency'];
 }
 
 if (isset($_POST['shit'])) {
 
-    $newShit = $_POST['shit'];
+    $editShit = $_POST['shit'];
 }
 
 if (isset($_POST['picture'])) {
 
-    $newPicture = $_POST['picture'];
+    $editPicture = $_POST['picture'];
 }
 
 
-if (isset($_POST['species'])) {
 
-    $selectedSpecies = $_POST['species'];
-}
+$query = $db->prepare("UPDATE `birds` SET `color` = '$editColor', `frequency` = '$editFrequency', `shit` = '$editShit', `picture` = '$editPicture' WHERE `id` = '$id'");
 
-$query = $db->prepare("UPDATE `birds` SET `color` = :newColor, `frequency` = :newFrequency, `shit` = :newShit, `picture` = :newPicture WHERE `species` = :selectedSpecies");
-
-$query -> bindParam(':newPicture', $newPicture);
-$query -> bindParam(':selectedSpecies', $selectedSpecies);
-$query -> bindParam(':newColor', $newColor);
-$query -> bindParam(':newFrequency', $newFrequency);
-$query -> bindParam(':newShit', $newShit);
+$query -> bindParam(':newPicture', $editPicture);
+$query -> bindParam(':selectedId', $id);
+$query -> bindParam(':newColor', $editColor);
+$query -> bindParam(':newFrequency', $editFrequency);
+$query -> bindParam(':newShit', $editShit);
 
 $query->execute();
 
 return $query->fetchAll();
+
+
 
